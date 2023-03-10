@@ -35,7 +35,7 @@ public class Main {
             else {
                 tipo = "caja de carton";
             }
-            System.out.println("Coste de envio: " + coste + " tipo de embalaje: " + tipo);
+            System.out.println("*Coste de envio: " + coste + "€\n*Tipo de embalaje: " + tipo);
         }
 
     }

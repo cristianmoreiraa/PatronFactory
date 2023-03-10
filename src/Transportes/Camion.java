@@ -19,9 +19,8 @@ public class Camion implements ITransporte{
 
     @Override
     public Float costeTotal(Integer cp) {
-        while (cp > 37000 || cp < 36000){
+        while (cp > 37000 || cp < 36000)
             cp = PedirDatos.pedirInt("A este codigo postal non chegamos, ten que ser maior que 36000 e menor que 37000");
-        }
         Integer diferencia = null;
         if(CODIGO>cp){
             diferencia = CODIGO-cp;
