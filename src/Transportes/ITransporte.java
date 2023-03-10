@@ -11,10 +11,10 @@ public interface ITransporte {
 
     /**
      * Método para calcular el tipo de embalaje
-     * @param dimensionX -> las dimensiones ancho
-     * @param dimensionY -> largo
-     * @param dimensionZ -> alto
-     * @param peso -> peso
+     * @param dimensionX -> Ancho del paquete
+     * @param dimensionY -> Largo del paquete
+     * @param dimensionZ -> Alto del paquete
+     * @param peso -> Peso del paquete
      * @return numero para despues saber que tipo es
      */
     Integer tipoEmbalaje(Float dimensionX, Float dimensionY, Float dimensionZ, Float peso);
