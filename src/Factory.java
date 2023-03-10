@@ -1,3 +1,7 @@
+import Transportes.Bicicleta;
+import Transportes.Camion;
+import Transportes.ITransporte;
+
 public class Factory {
     public class Factory {
         public static final int CAMION = 1;
@@ -7,8 +11,10 @@ public class Factory {
         public static Float dimensionY = null;
         public static Float dimensionZ = null;
         public static Float peso = null;
+
         /**
          * Devuelve producto del tipo de la Interface
+         *
          * @param type 1: consola, 2:ventana
          * @return producto segun el tipo
          */
@@ -30,4 +36,5 @@ public class Factory {
                     return null;
             }
         }
+    }
 }
