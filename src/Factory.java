@@ -1,9 +1,9 @@
 import Transportes.Bicicleta;
 import Transportes.Camion;
 import Transportes.ITransporte;
+import com.cristian.datos.PedirDatos;
 
 public class Factory {
-    public class Factory {
         public static final int CAMION = 1;
         public static final int BICICLETA = 2;
         public static Integer cp = null;
@@ -19,11 +19,11 @@ public class Factory {
          * @return producto segun el tipo
          */
         public static ITransporte getProducto(int type) {
-            cp = PedirDatos.getInt("Teclee tu CP");
-            dimensionX = PedirDatos.getFloat("Teclee a dimensionX");
-            dimensionY = PedirDatos.getFloat("Teclee a dimensionY");
-            dimensionZ = PedirDatos.getFloat("Teclee a dimensionZ");
-            peso = PedirDatos.getFloat("Teclee o peso");
+            cp = PedirDatos.pedirInt("Teclee tu CP");
+            dimensionX = PedirDatos.pedirFloat("Teclee a dimensionX");
+            dimensionY = PedirDatos.pedirFloat("Teclee a dimensionY");
+            dimensionZ = PedirDatos.pedirFloat("Teclee a dimensionZ");
+            peso = PedirDatos.pedirFloat("Teclee o peso");
             switch (type) {
                 // tipo consola
                 case CAMION:
@@ -37,4 +37,4 @@ public class Factory {
             }
         }
     }
-}
+

@@ -1,4 +1,5 @@
 import Transportes.ITransporte;
+import com.cristian.datos.PedirDatos;
 
 public class Main {
 
@@ -8,7 +9,7 @@ public class Main {
         String tipo = null;
         Integer nTipo = null;
 
-        int numero = PedirDatos.getInt("Como quieres que te lo entregen:\n1->Camion\n2->Bicicleta");
+        int numero = PedirDatos.pedirInt("Como quieres que te lo entregen:\n1->Camion\n2->Bicicleta");
         switch (numero){
             case 1:
                 obxT = Factory.getProducto(1);
@@ -40,4 +41,3 @@ public class Main {
     }
 
     }
-}
