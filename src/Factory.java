@@ -1,3 +1,4 @@
+import Transportes.Barco;
 import Transportes.Bicicleta;
 import Transportes.Camion;
 import Transportes.ITransporte;
@@ -6,6 +7,7 @@ import com.cristian.datos.PedirDatos;
 public class Factory {
         public static final int CAMION = 1;
         public static final int BICICLETA = 2;
+        public static final int BARCO = 3;
         public static Integer cp = null;
         public static Float dimensionX = null;
         public static Float dimensionY = null;
@@ -31,6 +33,8 @@ public class Factory {
                 // tipo ventana
                 case BICICLETA:
                     return new Bicicleta(cp, dimensionX, dimensionY, dimensionZ, peso);
+                case BARCO:
+                    return new Barco(cp, dimensionX, dimensionY, dimensionZ, peso);
                 // otro tipo
                 default:
                     return null;

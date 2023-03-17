@@ -9,7 +9,7 @@ public class Main {
         String tipo = null;
         Integer nTipo = null;
 
-        int numero = PedirDatos.pedirInt("Como quieres que te lo entregen:\n1->Camion\n2->Bicicleta");
+        int numero = PedirDatos.pedirInt("Como quieres que te lo entregen:\n1->Camion\n2->Bicicleta\n3->Barco");
         switch (numero){
             case 1:
                 obxT = Factory.getProducto(1);
@@ -18,6 +18,11 @@ public class Main {
                 break;
             case 2:
                 obxT = Factory.getProducto(2);
+                coste = obxT.costeTotal(Factory.cp);
+                nTipo = obxT.tipoEmbalaje(Factory.dimensionX,Factory.dimensionY,Factory.dimensionZ,Factory.peso);
+                break;
+            case 3:
+                obxT = Factory.getProducto(3);
                 coste = obxT.costeTotal(Factory.cp);
                 nTipo = obxT.tipoEmbalaje(Factory.dimensionX,Factory.dimensionY,Factory.dimensionZ,Factory.peso);
                 break;
