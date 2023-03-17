@@ -21,8 +21,22 @@ En este método, vamos a ver que tipo de embalaje necesitará cada producto.
 - Si la suma de las dimensiones es <=150 y el peso <=40 irá en caja de madera.
 - Si la suma de las dimensiones es <=3000 y el peso es <=100 irá en caja de cartón.
 - Si no es ningúna de las anteriores irá en palet.
+- 
 
+---
 
+# Explicamos la rama *barco*
+
+---
+
+En esta rama implementamos el objeto de tipo barco:
+
+- Para ellos creamos una nueva rama llamada barco y nos movemos a ella:
+
+        git branch barco
+        git checkout barco
+- Creamos la clase Barco
+- Implementamos los cambios necesarios en las clases **Main** y en la clase **Factory**
 
 
     Cristian Moreira Alén DAM1
